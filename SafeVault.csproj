@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="MySql.Data" Version="26.10.0" />
+    <Compile Remove="SafeVault.Tests/**/*.cs" />
+    <Content Remove="SafeVault.Tests/**" />
+    <None Remove="SafeVault.Tests/**" />
+  </ItemGroup>
+
+</Project>
